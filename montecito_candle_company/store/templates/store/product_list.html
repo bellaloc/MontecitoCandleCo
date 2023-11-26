@@ -1,15 +1,25 @@
 <!-- montecito_candle_company/store/templates/store/product_list.html -->
-{% for product in products %}
-    <div>
-        <h2>{{ product.name }}</h2>
-        <p>{{ product.description }}</p>
-        <p>${{ product.price }}</p>
-        
-        <!-- Add 'Add to Cart' button and other UI elements -->
-        <form method="post" action="{% url 'add_to_cart' product.id %}">
-            {% csrf_token %}
-            <button type="submit">Add to Cart</button>
-        </form>
-    </div>
-{% endfor %}
-<!-- Your HTML template for the product list -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    {% for product in products %}
+        <div>
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <p>${{ product.price }}</p>
+            
+            <!-- Add 'Add to Cart' button and other UI elements -->
+            <form method="post" action="{% url 'add_to_cart' product.id %}">
+                {% csrf_token %}
+                <button type="submit">Add to Cart</button>
+            </form>
+
+            <!-- Display the product image -->
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        </div>
+    {% endfor %}
+</body>
+</html>

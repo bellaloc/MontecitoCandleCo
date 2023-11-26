@@ -1,9 +1,17 @@
-# store/admin.py
 from django.contrib import admin
-from .models import Order
+from .models import Product, Order
+
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description', 'price', 'category', 'rating', 'stock_quantity']
+    search_fields = ['name', 'category']
+    list_filter = ['category', 'rating']
+    # Customize other options if needed
 
 class OrderAdmin(admin.ModelAdmin):
-    list_display = ('product', 'quantity', 'total_price', 'tracking_number')  # Replace 'user' with the actual field in your Order model
+    list_display = ['user', 'product', 'quantity', 'total_price', 'order_date', 'is_delivered']
+    search_fields = ['user__username', 'product__name']
+    list_filter = ['order_date', 'is_delivered']
+    # Customize other options if needed
 
-# Register the Order model with the custom admin class
+admin.site.register(Product, ProductAdmin)
 admin.site.register(Order, OrderAdmin)
