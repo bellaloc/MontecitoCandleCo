@@ -1,0 +1,10 @@
+<!-- Display products for a specific category -->
+<h2>{{ category }} Products</h2>
+{% for product in products %}
+    <!-- Display each product -->
+    <div>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>${{ product.price }}</p>
+    </div>
+{% endfor %}
