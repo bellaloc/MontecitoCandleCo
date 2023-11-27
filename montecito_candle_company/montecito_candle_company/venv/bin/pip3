@@ -1,4 +1,4 @@
-#!/Users/View/Desktop/bootcamp/MontecitoCandleCo/MontecitoCandleCo/montecito_candle_company/montecito_candle_company/venv/bin/python3.12
+#!/Users/View/Desktop/bootcamp/MontecitoCandleCo/MontecitoCandleCo/montecito_candle_company/montecito_candle_company/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

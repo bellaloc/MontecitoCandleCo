@@ -28,12 +28,16 @@ Montecito Candle Company is a Django-based web application for managing and sell
 
   
    git clone https://github.com/your-username/MontecitoCandleCo.git
-   cd MontecitoCandleCo
+   cd MontecitoCandleCo (go to the path where manage.py is located)
 
 Create and activate a virtual environment:
 
 bash:
 python -m venv venv
+or: pip install virtualenv
+
+bash:
+virtualenv venv
 
 source venv/bin/activate  # On Unix/Mac
 # or
@@ -60,6 +64,7 @@ Running the Development Server
 
 bash:
 python manage.py runserver
+
 
 Access the development server at http://127.0.0.1:8000/
 

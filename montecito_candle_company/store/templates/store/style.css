@@ -1,0 +1,7 @@
+/* Add any specific CSS styles for the product list page or product items */
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* Add other styles as needed */
+}
