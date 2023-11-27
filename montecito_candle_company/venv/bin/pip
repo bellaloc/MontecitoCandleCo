@@ -1,4 +1,6 @@
-#!/Users/View/Desktop/bootcamp/MontecitoCandleCo/MontecitoCandleCo/montecito_candle_company/venv/bin/python3.12
+#!/bin/sh
+'''exec' "/Users/View/Desktop/bootcamp/MontecitoCandleCo/MontecitoCandleCo/montecito_candle_company/montecito_candle_company new/MontecitoCandleCo/montecito_candle_company/venv/bin/python" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys
