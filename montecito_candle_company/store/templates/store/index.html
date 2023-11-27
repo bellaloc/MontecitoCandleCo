@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Montecito Candle Company</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Montecito Candle Company</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{% url 'product_list' %}">Product List</a></li>
+            <li><a href="{% url 'add_product' %}">Add Product</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <p>This is the homepage of Montecito Candle Company. Explore our products and add new ones!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Montecito Candle Company</p>
+    </footer>
+</body>
+</html>

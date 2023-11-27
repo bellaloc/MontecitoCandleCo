@@ -4,6 +4,9 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Product
 from .forms import ProductForm
 
+def index(request):
+    return render(request, 'store/index.html')
+
 def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
