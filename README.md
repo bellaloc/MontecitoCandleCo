@@ -2,7 +2,7 @@
 
 Montecito Candle Company is a Django-based web application for managing and selling candles. This project provides a foundation for an online store where users can browse, view, and purchase candles.
 
-#view deployed site at: https://statuesque-rugelach-1b1b76.netlify.app/
+#view deployed site at: https://hidden-wildwood-77572-0b9fbacc5ca7.herokuapp.com/ 
 
 ## Table of Contents
 
